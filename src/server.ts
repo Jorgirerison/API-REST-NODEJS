@@ -1,12 +1,15 @@
 import fastify from 'fastify'
+import { knex } from './database'
 
 // Título: EcmaScript Lint
 // Objetivo: Padronizar preferências (como aspas e espaçoes), além de corrigir automaticamente
 
 const app = fastify()
 
-app.get('/hello', () => {
-  return 'Hello Node.js'
+app.get('/hello', async () => {
+  const tables = await knex('sqlite_schema').select('*')
+
+  return tables
 })
 
 app
