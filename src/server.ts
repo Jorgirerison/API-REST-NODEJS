@@ -1,7 +1,7 @@
 import fastify from 'fastify'
 import { knex } from './database'
 
-// Título: Criando primeira migration
+// Título: Criando tabela de transações
 // Objetivo: Ajustando o knex ao ts além também do versionamento do bd
 
 const app = fastify()
