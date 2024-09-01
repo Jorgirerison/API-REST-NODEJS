@@ -1,8 +1,8 @@
 import fastify from 'fastify'
 import { knex } from './database'
 
-// Título: EcmaScript Lint
-// Objetivo: Padronizar preferências (como aspas e espaçoes), além de corrigir automaticamente
+// Título: Criando primeira migration
+// Objetivo: Ajustando o knex ao ts além também do versionamento do bd
 
 const app = fastify()
 
