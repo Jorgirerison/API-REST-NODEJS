@@ -1,15 +1,16 @@
 import fastify from 'fastify'
+import crypto from 'node:crypto'
 import { knex } from './database'
 
-// Título: Criando tabela de transações
-// Objetivo: Ajustando o knex ao ts além também do versionamento do bd
+// Título: realizando queries com knex
+// Objetivo: testar queries
 
 const app = fastify()
 
 app.get('/hello', async () => {
-  const tables = await knex('sqlite_schema').select('*')
+  const transactions = await knex('transactions').select('*')
 
-  return tables
+  return transactions
 })
 
 app
