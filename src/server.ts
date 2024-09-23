@@ -1,9 +1,10 @@
 import fastify from 'fastify'
 import crypto from 'node:crypto'
 import { knex } from './database'
+import { env } from './env'
 
-// Título: variáveis de ambiente
-// Objetivo: ambientes são os momentos da aplicação, teste, produção, desenvolvimento...
+// Título: tratando env com zod
+// Objetivo: padronizar um esquema de validação dos dados provenientes do .env
 
 const app = fastify()
 
@@ -15,7 +16,7 @@ app.get('/hello', async () => {
 
 app
   .listen({
-    port: 3333,
+    port: env.PORT,
   })
   .then(() => {
     console.log('HTTP SERVER Running!')
