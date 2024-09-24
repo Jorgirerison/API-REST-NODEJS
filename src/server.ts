@@ -3,7 +3,7 @@ import crypto from 'node:crypto'
 import { knex } from './database'
 import { env } from './env'
 
-// Título: tratando env com zod
+// Título: requisitos da aplicação
 // Objetivo: padronizar um esquema de validação dos dados provenientes do .env
 
 const app = fastify()
