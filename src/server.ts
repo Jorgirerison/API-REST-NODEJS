@@ -4,8 +4,8 @@ import { knex } from './database'
 import { env } from './env'
 import { transactionsRoutes } from './routes/transactions'
 
-// Título: criação da transação
-// Objetivo: criar a primeira rota e transação com método POST
+// Título: Tipagem do knex
+// Objetivo: Integrar o Knex com o TypeScript para ter suporte ao autocomplete de tabelas.
 
 const app = fastify()
 

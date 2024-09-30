@@ -15,6 +15,7 @@ export async function transactionsRoutes(app: FastifyInstance) {
       request.body,
     )
 
+    // autocomplete bem aqui
     await knex('transactions').insert({
       id: randomUUID(),
       title,
