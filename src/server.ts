@@ -4,8 +4,8 @@ import { knex } from './database'
 import { env } from './env'
 import { transactionsRoutes } from './routes/transactions'
 
-// Título: Tipagem do knex
-// Objetivo: Integrar o Knex com o TypeScript para ter suporte ao autocomplete de tabelas.
+// Título: Listagem das transações
+// Objetivo: Criar rotas get e vizualizar no insomnia
 
 const app = fastify()
 
