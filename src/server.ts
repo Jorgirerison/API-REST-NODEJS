@@ -4,8 +4,8 @@ import { knex } from './database'
 import { env } from './env'
 import { transactionsRoutes } from './routes/transactions'
 
-// Título: Listagem das transações
-// Objetivo: Criar rotas get e vizualizar no insomnia
+// Título: resumo de transações
+// Objetivo: Criar rota get para retornar o amount
 
 const app = fastify()
 
