@@ -4,8 +4,8 @@ import cookie from '@fastify/cookie'
 import { env } from './env'
 import { transactionsRoutes } from './routes/transactions'
 
-// Título: utilizando cookies no fastfy
-// Objetivo: objetivo é trabalhar com cookies para identificar os usuários e chegarmos ao mapeamento das transações do próprio usuário
+// Título: validando existência dos cookies
+// Objetivo: segmentar de vez por session_id os usuários para que só façam alterações e vejam somente suas transações
 
 const app = fastify()
 
