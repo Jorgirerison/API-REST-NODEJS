@@ -4,7 +4,7 @@ import cookie from '@fastify/cookie'
 import { env } from './env'
 import { transactionsRoutes } from './routes/transactions'
 
-// Título: validando existência dos cookies
+// Título: configurando um hook global
 // Objetivo: segmentar de vez por session_id os usuários para que só façam alterações e vejam somente suas transações
 
 const app = fastify()
