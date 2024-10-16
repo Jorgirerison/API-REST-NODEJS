@@ -1,19 +1,8 @@
-import fastify from 'fastify'
-import cookie from '@fastify/cookie'
-
+import { app } from './app'
 import { env } from './env'
-import { transactionsRoutes } from './routes/transactions'
 
-// Título: configurando um hook global
-// Objetivo: segmentar de vez por session_id os usuários para que só façam alterações e vejam somente suas transações
-
-const app = fastify()
-
-// cadastro do modulo de cookies precisa acontecer antes das rotas
-app.register(cookie)
-app.register(transactionsRoutes, {
-  prefix: 'transactions',
-})
+// Título: testando criação de transação
+// Objetivo: instalação da ferramenta supertest para teste de criação com post
 
 app
   .listen({
