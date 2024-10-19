@@ -1,8 +1,8 @@
 import { app } from './app'
 import { env } from './env'
 
-// Título: testando criação de transação
-// Objetivo: instalação da ferramenta supertest para teste de criação com post
+// Título: categorizando os testes
+// Objetivo: organizar por categorias os testes para receber logs objetivos de onde está o erro
 
 app
   .listen({
